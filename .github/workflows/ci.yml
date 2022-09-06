@@ -36,7 +36,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: yunnysunny/ubuntu:1.18
           build-args: |
-            GO_VERSION=${{ env.GOLANG_VERSION }}
+            VERSION=${{ env.VERSION }}
       
       - name: Update core description
         uses: peter-evans/dockerhub-description@v2
