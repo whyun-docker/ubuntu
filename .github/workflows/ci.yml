@@ -34,7 +34,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: yunnysunny/ubuntu:1.18
+          tags: ${{ format('yunnysunny/ubuntu:{0}', env.VERSION) }}
           build-args: |
             VERSION=${{ env.VERSION }}
       
