@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-export VERSION=1.18
+export VERSION=22.04
 TAG_LATEST=yunnysunny/ubuntu:latest
 TAG_CURRENT=yunnysunny/ubuntu:${VERSION}
 
